@@ -6,7 +6,7 @@ function App() {
       title: 'WhatsApp Group',
       description: 'Join our community',
       icon: Users,
-      href: 'https://chat.whatsapp.com/your-group-link',
+      href: 'https://chat.whatsapp.com/KeusSvgXUf0JdZior7JvxR?mode=wwc',
       color: 'from-green-500 to-emerald-600',
     },
     {
@@ -17,8 +17,8 @@ function App() {
       color: 'from-pink-500 to-purple-600',
     },
     {
-      title: 'Call Us',
-      description: '+91 98765 43210',
+      title: 'Contact Us',
+      description: '+91 9156-200-314',
       icon: Phone,
       href: 'tel:+919876543210',
       color: 'from-blue-500 to-cyan-600',
@@ -109,7 +109,7 @@ function App() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center text-gray-400">
             <div className="flex items-center gap-2">
               <Phone className="w-5 h-5" />
-              <span>+91 98765 43210</span>
+              <span>+91</span>
             </div>
             <div className="hidden sm:block w-1 h-1 rounded-full bg-gray-600" />
             <div>
