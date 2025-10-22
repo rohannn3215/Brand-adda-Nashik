@@ -20,13 +20,7 @@ function App() {
       title: 'Contact Us',
       description: '+91 9156-200-314',
       icon: Phone,
-      type: 'vcard', // new type
-      vcard: {
-        fn: 'Brand Adda Nashik',
-        org: 'Brand Adda',
-        tel: '+919156200314',
-        email: 'info@brandadda.com'
-      },
+      href: 'tel:+919156200314',
       color: 'from-blue-500 to-cyan-600',
     },
     {
@@ -76,33 +70,12 @@ function App() {
               const Icon = link.icon;
               return (
                 <a
-  key={index}
-  href={link.href || '#'}
-  onClick={(e) => {
-    if (link.type === 'vcard') {
-      e.preventDefault();
-
-      const vcard = `BEGIN:VCARD
-VERSION:3.0
-FN:${link.vcard.fn}
-ORG:${link.vcard.org}
-TEL;TYPE=WORK,VOICE:${link.vcard.tel}
-EMAIL:${link.vcard.email}
-END:VCARD`;
-
-      const blob = new Blob([vcard], { type: 'text/vcard' });
-      const url = URL.createObjectURL(blob);
-      const a = document.createElement('a');
-      a.href = url;
-      a.download = `${link.vcard.fn}.vcf`;
-      a.click();
-      URL.revokeObjectURL(url);
-    }
-  }}
-  target="_blank"
-  rel="noopener noreferrer"
-  className="group relative bg-gradient-to-br from-gray-800/80 to-gray-900/80 backdrop-blur-sm rounded-xl md:rounded-2xl p-4 md:p-6 border border-gray-700/50 hover:border-gray-600 transition-all duration-300 active:scale-95 md:hover:scale-102 hover:shadow-xl shadow-lg"
->
+                  key={index}
+                  href={link.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="group relative bg-gradient-to-br from-gray-800/80 to-gray-900/80 backdrop-blur-sm rounded-xl md:rounded-2xl p-4 md:p-6 border border-gray-700/50 hover:border-gray-600 transition-all duration-300 active:scale-95 md:hover:scale-102 hover:shadow-xl shadow-lg"
+                >
                   <div className="flex flex-col items-center text-center gap-3 md:gap-4">
                     <div className={`flex items-center justify-center p-3 md:p-4 rounded-xl bg-gradient-to-br ${link.color} shadow-lg group-hover:shadow-xl transition-all duration-300`}>
                       <Icon className="w-7 h-7 md:w-8 md:h-8 text-white" strokeWidth={2.5} />
