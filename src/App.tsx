@@ -109,7 +109,7 @@ function App() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center text-gray-400">
             <div className="flex items-center gap-2">
               <Phone className="w-5 h-5" />
-              <span>+91</span>
+              <span>+91 9156-200-314</span>
             </div>
             <div className="hidden sm:block w-1 h-1 rounded-full bg-gray-600" />
             <div>
