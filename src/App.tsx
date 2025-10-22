@@ -20,7 +20,7 @@ function App() {
       title: 'Contact Us',
       description: '+91 9156-200-314',
       icon: Phone,
-      href: 'tel:+919876543210',
+      href: 'tel:+919156200314',
       color: 'from-blue-500 to-cyan-600',
     },
     {
@@ -104,7 +104,7 @@ function App() {
             Visit Our Store
           </h3>
           <p className="text-gray-300 text-lg mb-6 leading-relaxed">
-            Experience our complete collection in person and get personalized styling advice from our expert team.
+            7,Saibaba Mandir Complex , Near Manyavar Showroom , Krushinagar , College Road , Nashik-422005
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center text-gray-400">
             <div className="flex items-center gap-2">
