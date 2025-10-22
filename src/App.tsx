@@ -13,7 +13,7 @@ function App() {
       title: 'Instagram',
       description: 'Follow for updates',
       icon: Instagram,
-      href: 'https://instagram.com/brandaddanashik',
+      href: 'https://www.instagram.com/brand.adda_nashik/',
       color: 'from-pink-500 to-purple-600',
     },
     {
