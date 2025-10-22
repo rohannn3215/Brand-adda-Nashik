@@ -27,7 +27,7 @@ function App() {
       title: 'Chat on WhatsApp',
       description: 'Quick support',
       icon: MessageCircle,
-      href: 'https://wa.me/919876543210',
+      href: 'https://wa.me/9156200314',
       color: 'from-green-600 to-teal-600',
     },
     {
